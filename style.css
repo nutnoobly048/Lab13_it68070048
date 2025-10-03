@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#body {
+    background-color: cornsilk;
+}
+#navBar {
+    background-color: tomato;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+#title {
+    margin: 5%;
+    justify-content: space-around;
+}
+
+#textarea {
+    resize: none;
+    background-color: bisque;
+    padding: 1%;
+    flex: 1;
+    
+}
+#safe_image{
+    width: 128px;
+    height: 128px;
+    margin-top: 5%;
+
+}
+#textareadiv {
+    margin: 2%;
+    display: flex;
+    height: 300px;
+}
+.div{
+    margin: 3%;
+    display: flex;
+}
+
+.div_line{
+    margin: 1%;
+}
+
+.lr_div{
+    flex: 1;
+}
+
+.input_box{
+    height: 20px;
+}
