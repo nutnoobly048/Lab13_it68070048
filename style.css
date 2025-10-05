@@ -38,6 +38,11 @@
     display: flex;
     height: 300px;
 }
+
+#currency_amount{
+    resize: none;
+}
+
 .div{
     margin: 3%;
     display: flex;
@@ -53,4 +58,34 @@
 
 .input_box{
     height: 20px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.button1:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.button:hover {
+    background-color: #04AA6D;
+    color: white;
 }

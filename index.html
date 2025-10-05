@@ -22,7 +22,7 @@
     </div>
     <hr class="div_line">
     <div id="textareadiv">
-        <textarea name="textarea" id="textarea" disabled>See your Balance Here !</textarea>
+        <textarea name="textarea" id="textarea" readonly rows="10" cols="30">See your Balance Here !</textarea>
     </div>
     <div class="div">
         <div class="lr_div">
@@ -47,11 +47,54 @@
                         <p>current cash Balances:</p>
                         <input type="number" class="input_box" id="cash_balance">
                     </div>
+                    <button class="button button1" onclick="showInTextArea()">Change</button>
+                </div>
+            </div>
+            <div class="div">
+                <img src="img/coins.png" alt="coins" id="safe_image">
+                <div id="title">
+                    <h3>
+                        Bank Operation
+                    </h3>
+                    <div class="div">
+                        <select name="bankoperation" id="bankoperation">
+                            <option value="Deposit">Deposit</option>
+                            <option value="Withdraw">Withdraw</option>
+                        </select>
+                        <input type="number" class="input_box" id="bankoperation_amount">
+                    </div>
+                    <button class="button button1" onclick="depositWithdraw()">Proceed</button>
                 </div>
             </div>
         </div>
         <div class="lr_div">
             <h2>Financial Tools</h2>
+            <div id="title">
+                <div class="div">
+                    <img src="img/gold.png" alt="gold" id="safe_image">
+                    <div id="title">
+                        <h3>
+                            Currency Converter
+                        </h3>
+                        <div class="div">
+                            <p>Input</p>
+                            <input type="number" class="input_box" id="currency_amount">
+                        </div>
+                        <div class="div">
+                            <p>output</p>
+                            <textarea name="textarea" id="currency_amount" disabled></textarea>
+                        </div>
+                        <div class="div">
+                            <p>Input currency</p>
+                            <select name="currency" id="currency">
+                                <option value="USD">USD</option>
+                                <option value="EUR">THB</option>
+                            </select>
+                        </div>
+                        <button class="button button1">Convert</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
