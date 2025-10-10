@@ -35,3 +35,21 @@ function depositWithdraw() {
         document.getElementById("textarea").value = "Current Account Balance: " + String(account_balance) + ", Current cash Balance: " + String(cash_balance);
     }
 }
+
+document.getElementById("convert_button").addEventListener("click", async () => {
+    const type = document.getElementById("currency").value;
+    const amount = document.getElementById("currency_amount").value;
+
+    const response = await fetch("http://localhost:4004/convert", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    type: type,
+                    amount: amount
+                })
+            })
+    
+    const text = await response.json();
+
+    document.getElementById("currency_output").value = text
+})
